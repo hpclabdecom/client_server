@@ -24,7 +24,7 @@ public class Client {
 			Socket s = new Socket("localhost", 6969);
 			Message msg = new MyMsgFib();
 			msg.setType("3");
-			((MyMsgFib)msg).setNum(new Integer(20));
+			((MyMsgFib)msg).setNum(new Integer(200));
 						
 			ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(s.getOutputStream()));
 						

@@ -8,13 +8,14 @@ public class ServerCommandThree implements ServerCommand{
 	public Object execute(Message m) {
 		System.err.println("command three");
 		//estaria o algo de fib
-		/*int proximo=0,atual=0,anterior=1;
+		int proximo=0,atual=0,anterior=1;
 		while(proximo<=((MyMsgFib)m).getNum()){
 		    proximo=atual+anterior;
 			System.out.print(proximo+",");
 			anterior=atual;
 			atual=proximo;
-		}*/
+		}
+		System.out.println();
 		System.out.println(((MyMsgFib)m).getNum());
 		
 		return String.valueOf(m.getType());
